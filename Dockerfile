@@ -21,7 +21,7 @@ RUN apt update && apt install -y \
     && rm chromedriver-linux64.zip google-chrome-stable_current_amd64.deb
 
 # Copy selenium testcase code
-COPY /testcases .
+COPY testcases .
 
 # Run the application
 CMD ["pytest", "-v"]
